@@ -103,10 +103,15 @@ Cette commande installe les composants de WSL, et vous permettra de réaliser le
 
 ### Configuration d'une VM WSL2
 
-Nous allons réaliser les manipulations de ce TP en utilisant le WSL2. Il s'agit d'une machine virtuelle linux intégrée au système Windows. Ouvrez une invite de commande Windows (PowerShell), puis tapez la commande suivante pour lancer une nouvelle machine virtuelle :
+Nous allons réaliser les manipulations de ce TP en utilisant le WSL2. Il s'agit d'une machine virtuelle linux intégrée au système Windows. Ouvrez une invite de commande Windows (PowerShell), puis tapez la commande suivante pour installer une distribution Debian pour votre future machine virtuelle :
 
 ```bash
 wsl --install Debian
+```
+Une fois la distribution installée, vous pouvez lancer une nouvelle machine virtuelle en exécutant la commande :
+
+```bash
+wsl -d Debian
 ```
 
 Vous êtes alors invité à choisir un nom d'utilisateur ainsi qu'un mot de passe. Choisissez des identifiants courts afin de pouvoir les taper à plusieurs reprises sans complications. Une fois l'installation terminée, vous devez être en mesure de taper des commandes linux dans la console. L'affichage du début de ligne de l'invite de commande doit refléter le changement d'environnement. Vous pouvez maintenant exécuter les commandes suivantes pour terminer la configuration de la machine virtuelle :
