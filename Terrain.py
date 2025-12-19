@@ -74,4 +74,3 @@ class Terrain:
                 else:
                     print(" ", end="")
             print()
-
