@@ -1,4 +1,3 @@
-
 from Terrain import Terrain
 from Reseau import Reseau
 
@@ -31,5 +30,4 @@ if __name__ == "__main__":
         reseau.afficher_avec_terrain(terrain)
     else:
         print("Pas de configuration valide optimale trouvée.")
-
 
